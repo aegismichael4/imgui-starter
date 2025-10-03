@@ -1,6 +1,10 @@
 #include "Application.h"
 #include "imgui/imgui.h"
 
+#include "Logger.h"
+
+using namespace LoggerSpace;
+
 namespace ClassGame {
         //
         // our global variables
@@ -13,9 +17,9 @@ namespace ClassGame {
         void GameStartUp() 
         {
             // Initialize logging system
-//            Logger& logger = Logger::GetInstance();
-//            logger.LogInfo("Game started successfully");
-//            logger.LogGameEvent("Application initialized");
+            Logger& logger = Logger::GetInstance();
+            logger.LogInfo("Game started successfully");
+            logger.LogGameEvent("Application initialized");
         }
 
         //
